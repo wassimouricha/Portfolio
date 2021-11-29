@@ -599,7 +599,9 @@ section .titre::after{
             display: flex;
             justify-content: center;
             align-items: center;
-            background: url(media/cycy.gif) 30px 50% ;
+            background: url(media/yuyu.gif) no-repeat;
+            background-position: center;
+            background-size: cover;
             background-attachment: fixed;
         }
 
