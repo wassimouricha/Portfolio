@@ -47,9 +47,13 @@ window.addEventListener('scroll', () =>
 {
     const scrollTop = document.scrollingElement.scrollTop;
 
-    if(scrollTop > 500)
+    if(scrollTop > 300)
     {
-        barAnime.classList.add('.skillper')
+        barAnime.classList.add('.skillper::before')
+    }
+     else (scrollTop < 300 )
+    {
+        barAnime.classList.removeClass('.skillper::before')
     }
 });
 
@@ -61,6 +65,7 @@ const bodyU = document.querySelector('.experience');
 const bodyE = document.querySelector('.competences');
 const bodyN = document.querySelector('.navbar');
 const toggle = document.getElementById('toggle');
+
 toggle.onclick = function(){
     toggle.classList.toggle('activus')
     body.classList.toggle('activus')
@@ -68,5 +73,4 @@ toggle.onclick = function(){
     bodyE.classList.toggle('activus')
     bodyN.classList.toggle('activus')
 }
-
 
