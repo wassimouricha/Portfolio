@@ -497,12 +497,12 @@ section .titre{
     font-family: 'ubuntu', sans-serif;
 }
 
-.presentation .contenupresentation .left img{
+/* .presentation .contenupresentation .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 15px ;
-}
+} */
 
 .presentation .contenupresentation, .experience .contenuexperience, 
 .competences .contenucompetences{
@@ -588,12 +588,102 @@ section .titre::after{
   
 }
 
-/* .presentation .contenupresentation a:hover{
+/* carte personnage */
+
+.cardus{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: #fcec0c;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0,0,0,0.5);
+    
+}
+
+.cardus .detailus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardus .detailus .contentus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardus .detailus .contentus h2{
+    font-family: 'ubuntu';
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.cardus .detailus .contentus h2 span{
+    color: #FF4A57;
+    font-size: 0.8em;
+}
+
+.cardus .detailus .contentus .socialus{
+
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.cardus .detailus .contentus .socialus a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #FF4A57;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 30px;
+    transition: 0.5s;
+    border-radius: 35%;
+}
+
+.cardus .detailus .contentus .socialus a:hover{
+    background: #25E1ED;
     color: #fcec0c;
-    background: none;
-} */
+}
 
+.cardus .imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style:preserve-3d ;
+    background: #000;
+    transition: 1s;
 
+}
+.cardus:hover .imgBox{
+    transform: rotateY(-180deg);
+}
+.cardus .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+}
 
         /* swiper */
         .carou{
@@ -1096,13 +1186,6 @@ margin: 20px 0;
     }
 }
 
-@media (max-width: 1104px){
-    .presentation .contenupresentation .left img{
-        height: 350px;
-        width: 350px;
-  
-    }
-}
 
 
 @media (max-width: 947px){
@@ -1259,6 +1342,16 @@ margin: 20px 0;
          
             
             }
+
+            .cardus {
+
+                left: 80px;
+            }
+
+            .cardus h2 {
+                flex-direction: column;
+                font-size: 20px;
+            }
 }
 
 @media (max-width: 500px){
@@ -1280,12 +1373,21 @@ margin: 20px 0;
                 min-width: none;
             }
 
+            .cardus h2 {
+                flex-direction: column;
+                font-size: 15px;
+            }
         
 }
 
 @media (max-width: 345px){
     .competences .titre::after{
         top: 92px;
+    }
+
+    .cardus h2 {
+        flex-direction: column;
+        font-size: 12px;
     }
     
 }
