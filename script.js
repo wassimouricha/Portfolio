@@ -74,3 +74,4 @@ toggle.onclick = function(){
     bodyN.classList.toggle('activus')
 }
 
+
