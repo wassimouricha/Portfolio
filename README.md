@@ -1,2 +1,2 @@
 # Portfolio.io
-My first portfolio in html css and javascript
+My first portfolio in HTML CSS Javascript and JQuery
