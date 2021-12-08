@@ -1,0 +1,1404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* this is one way to import your fonts */
+/* voici une des manières d'importer une police d'écriture */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Orbitron&family=Poppins:ital,wght@1,300&display=swap');
+
+@font-face {
+    font-family: "cyberpunk";
+    src: url("./media/Cyberpunk-Regular.ttf");
+    font-style: normal;
+   }
+
+
+
+/* here is the general settings */
+/* propriétés générales */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    
+background:white;
+overflow-x: hidden;
+
+
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* here is  the navbar settings */
+/* propriétés de la nav bar */
+.maxwidth{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    font-family: 'ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    z-index: 999;
+
+}
+
+.navbar.sticky{
+    padding: 30px 0;
+    background: #fcec0c;
+}
+
+.navbar.sticky .logo a span{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar .maxwidth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+font-size: 35px;
+font-weight: 600;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+color: #fff;
+font-size: 18px;
+font-weight: 750;
+margin-left: 25px;
+transition: 0.3s ease;
+}
+
+/* Hover animation */
+
+.navbar .logo a span{
+    color:#25E1ED
+}
+.navbar .menu li a:hover{
+    color: #fcec0c;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: #25E1ED;
+}
+
+/* darkmode btn */
+/* bouton pour le mode dark */
+
+#toggle{
+    position: relative;
+    display: block;
+    top: -18px;
+    left: 15px;
+    width: 32px;
+    height: 16px;
+    border-radius: 16px;
+    background: #222;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: inset 0 8px 60px rgba(0,0,0,0.1), inset 0 8px 8px rgba(0,0,0,0.1),
+     inset 0 -4px 4px rgba(0,0,0,0.1);
+}
+#toggle .indicateur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: linear-gradient(to bottom, #25E1ED , #222);
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.5),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+}
+
+#toggle.activus .indicateur{
+left: 16px;
+
+}
+#toggle.activus{
+    background: #25E1ED;
+    transition: 0.5s;
+}
+
+
+.presentation.activus {
+    background: #222;
+    transition: 0.5s ease-in-out;
+}
+
+.presentation.activus .titre::after{
+    background: #222;
+    transition: 0.5s ease-in-out;
+}
+
+.experience.activus {
+    background: #222;
+    transition: 0.5s ease-in-out;
+}
+
+.experience.activus .titre::after{
+    background: #222;
+    transition: 0.5s ease-in-out;
+}
+
+.competences.activus {
+    background: #222;
+    transition: 0.5s ease-in-out;
+}
+.competences.activus .skillbar {
+    background: #FF4A57;
+    transition: 0.5s ease-in-out;
+}
+
+.competences.activus .titre::after{
+    background: #222;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar.activus .logo  a{
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar.activus .menu li a{
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+/* here is  the home settings */
+/* propriétés de la partie Accueil*/
+
+.accueil{
+    display: flex;
+    background: url(media/wall.jpg) no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'ubuntu', sans-serif;
+    position: relative;
+    z-index: 1;
+
+}
+
+.accueil::before{
+    content: '';
+    position: absolute;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(media/raini.png);
+    animation: rain 0.2s linear infinite;
+    z-index: -1;
+}
+/* rainy animation */
+/* animation de la pluie */
+
+@keyframes rain{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
+}
+
+.accueil .maxwidth{
+    margin: auto 0 auto 40px;
+}
+
+.accueil .contenuaccueil .text-1{
+font-size: 27px;
+
+}
+
+.accueil .contenuaccueil .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+
+    }
+
+.accueil .contenuaccueil .text-3{
+        font-size: 40px;
+        margin: 5px 0;
+        }
+
+
+.accueil .contenuaccueil .text-3 span{
+  
+    color: #fcec0c;
+    font-weight: 500;
+        }
+
+        
+
+
+
+/* style du bouton du menu  */
+/* menu btn style */
+
+.menuBtn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+/*  */
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'poppins', sans-serif;
+text-align: center;
+font-size: 25px;
+}
+
+/* contenu de la partie accueil */
+.accueil .contenuaccueil a{
+    
+    color: #fff;
+    
+   
+}
+
+/* .accueil .contenuaccueil a:hover{
+    color: #fcec0c;
+    background: none;
+    z-index: 200;
+} */
+/* cyberpunk button */
+/* bouton cyberpunk */
+.cybr-btn {
+    /* ce sont des propriétées personalisées */
+    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
+    --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
+    --primary-hue: 0;
+    --primary-lightness: 50;
+    --color: hsl(0, 0%, 100%);
+    --font-size: 15px;
+    --shadow-primary-hue: 180;
+    --label-size: 9px;
+    --shadow-secondary-hue: 60;
+    --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
+    --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    --border: 4px;
+    --shimmy-distance: 5;
+    /* La propriété clip-path empêche une portion d'un élément d'être affichée en définissant une région de rognage */
+    /* polygon est une valeur determinant la taille et la position de la forme */
+    --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
+    --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
+    --clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
+    --clip-four: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+    --clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+    --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
+    --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
+    font-family: 'orbitron';
+    color: var(--color);
+    cursor: pointer;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: var(--font-size);
+    outline: transparent;
+    letter-spacing: 2px;
+    position: relative;
+    font-weight: 700;
+    border: 0;
+    /* min-width: 300px; */
+    height: 75px;
+    line-height: 75px;
+    transition: background 0.2s;
+    z-index: 2;
+  }
+  
+  .cybr-btn:hover {
+    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
+  }
+  .cybr-btn:active {
+    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
+  }
+  
+  .cybr-btn:after,
+  .cybr-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: var(--clip);
+    z-index: -1;
+  }
+  
+  .cybr-btn:before {
+    background: var(--shadow-primary);
+    transform: translate(var(--border), 0);
+  }
+  
+  .cybr-btn:after {
+    background: #fcec0c;
+  }
+  
+  .cybr-btn__tag {
+    position: absolute;
+    padding: 1px 4px;
+    letter-spacing: 1px;
+    line-height: 1;
+    bottom: -5%;
+    right: 5%;
+    font-weight: normal;
+    color: hsl(0, 0%, 0%);
+    font-size: var(--label-size);
+  }
+  
+  .cybr-btn__glitch {
+    position: absolute;
+    top: calc(var(--border) * -1);
+    left: calc(var(--border) * -1);
+    right: calc(var(--border) * -1);
+    bottom: calc(var(--border) * -1);
+    background: var(--shadow-primary);
+    text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
+    clip-path: var(--clip);
+    animation: glitch 2s infinite;
+    display: none;
+  }
+  
+  .cybr-btn:hover .cybr-btn__glitch {
+    display: block;
+  }
+  
+  .cybr-btn__glitch:before {
+    content: '';
+    position: absolute;
+    top: calc(var(--border) * 1);
+    right: calc(var(--border) * 1);
+    bottom: calc(var(--border) * 1);
+    left: calc(var(--border) * 1);
+    clip-path: var(--clip);
+    background: var(--primary);
+    z-index: -1;
+  }
+  
+  /* l'animation du glitch sur le bouton */
+  @keyframes glitch {
+    0% {
+      clip-path: var(--clip-one);
+    }
+    2%, 8% {
+      clip-path: var(--clip-two);
+      transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+    }
+    6% {
+      clip-path: var(--clip-two);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    9% {
+      clip-path: var(--clip-two);
+      transform: translate(0, 0);
+    }
+    10% {
+      clip-path: var(--clip-three);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    13% {
+      clip-path: var(--clip-three);
+      transform: translate(0, 0);
+    }
+    14%, 21% {
+      clip-path: var(--clip-four);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    25% {
+      clip-path: var(--clip-five);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    30% {
+      clip-path: var(--clip-five);
+      transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+    }
+    35%, 45% {
+      clip-path: var(--clip-six);
+      transform: translate(calc(var(--shimmy-distance) * -1%));
+    }
+    40% {
+      clip-path: var(--clip-six);
+      transform: translate(calc(var(--shimmy-distance) * 1%));
+    }
+    50% {
+      clip-path: var(--clip-six);
+      transform: translate(0, 0);
+    }
+    55% {
+      clip-path: var(--clip-seven);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    60% {
+      clip-path: var(--clip-seven);
+      transform: translate(0, 0);
+    }
+    31%, 61%, 100% {
+      clip-path: var(--clip-four);
+    }
+  }
+  
+  .cybr-btn:nth-of-type(2) {
+    --primary-hue: 260;
+  }
+
+/* contenu de la partie section  */
+
+section{
+    padding: 100px 0;
+}
+
+.presentation , .experience, .competences{
+    font-family: 'poppins', sans-serif;
+
+}
+
+.presentation{
+    background: #136377;
+}
+
+section .titre{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+/* .presentation .contenupresentation .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 15px ;
+} */
+
+.presentation .contenupresentation, .experience .contenuexperience, 
+.competences .contenucompetences{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.presentation .contenupresentation .left{
+
+    width: 45%;
+}
+
+.presentation .contenupresentation .right{
+    
+    width: 55%;
+}
+
+.presentation .contenupresentation .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.presentation .contenupresentation .right .text p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.presentation .contenupresentation .right .text span{
+
+    color: #fcec0c;
+}
+
+
+
+section .titre::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+section .titre::after{
+    content: " ";
+    position: absolute;
+    bottom: -15px;
+    font-size: 20px;
+    color: #136377;
+    left: 50%;
+    padding: 7px;
+    background: #fff;
+    transform: translateX(-50%);
+
+}
+
+.presentation .titre::after{
+    content: "自分は何者 ?";
+    position: absolute;
+    bottom: -15px;
+    font-size: 20px;
+    color: #fcec0c;
+    left: 50%;
+    padding: 7px;
+    background: #136377;
+    transform: translateX(-50%);
+
+}
+/* the button */
+/* le bouton ! */
+.presentation .contenupresentation a{
+  
+    color: #fff;
+  
+  
+}
+
+/* carte personnage */
+
+.cardus{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: #fcec0c;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0,0,0,0.5);
+    
+}
+
+.cardus .detailus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardus .detailus .contentus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardus .detailus .contentus h2{
+    font-family: 'ubuntu';
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.cardus .detailus .contentus h2 span{
+    color: #FF4A57;
+    font-size: 0.8em;
+}
+
+.cardus .detailus .contentus .socialus{
+
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.cardus .detailus .contentus .socialus a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #FF4A57;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 30px;
+    transition: 0.5s;
+    border-radius: 35%;
+}
+
+.cardus .detailus .contentus .socialus a:hover{
+    background: #25E1ED;
+    color: #fcec0c;
+}
+
+.cardus .imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style:preserve-3d ;
+    background: #000;
+    transition: 1s;
+
+}
+.cardus:hover .imgBox{
+    transform: rotateY(-180deg);
+}
+.cardus .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+}
+
+        /* swiper */
+        .carou{
+            color: #000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(media/yuyu.gif) no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 110px;
+          }
+          
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 430px;
+            background: #000;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006) ;
+          }
+          
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 430px;
+            
+          }
+          /* .swiper-slide a{
+              background: rgba(37, 225, 237, .3) ;
+              color: #fcec0c;
+              padding-left: 5px;
+              padding-right: 5px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              border-radius: 5px;
+              position: absolute;
+              font-family: 'ubuntu';
+              text-align: center;
+              top: 105px;
+              left: 75px;
+              
+              
+            } */
+
+
+
+
+/* for the expérience section */
+/* pour la section  expérience   */
+
+
+
+.experience .titre::after{
+    content: "Professionnel";
+    background: black;
+
+}
+
+.experience .titre::before{
+    content: "";
+    background: #fff;
+
+}
+
+.experience{
+    color: #fff;
+
+background: #000;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.experience .contenuexperience .card{
+
+    width: calc(45% - 20px);
+    background: #fcec0c;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.experience .contenuexperience .card i {
+    font-size: 50px;
+    color: #FF4A57;
+}
+
+.experience .contenuexperience .card .text{
+    font-size: 25px;
+    font-weight: 800;
+    margin: 10px 0 7px 0;
+    color: black;
+}
+
+.experience .contenuexperience .card span{
+
+    color: #25E1ED;
+    font-weight: 600;
+}
+
+.experience .contenuexperience .card p{
+
+    color: black;
+}
+
+.experience .contenuexperience .card .box{
+    transition: all 0.3s ease;
+}
+.experience .contenuexperience .card:hover .box{
+    transform: scale(1.05);
+    
+}
+
+
+/* skills section */
+/* section mes compétences */
+
+.competences{
+    background: #FF4A57;
+}
+
+.competences .titre{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+
+
+.competences .titre::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.competences .titre::after{
+    content: "En programmation";
+    position: absolute;
+    bottom: -15px;
+    font-size: 20px;
+    color: #136377;
+    left: 50%;
+    padding: 7px;
+    background: #FF4A57;
+    transform: translateX(-50%);
+
+}
+
+
+
+.competences .contenucompetences .column{
+    width: calc(50% - 30px);
+}
+
+.competences .contenucompetences .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.competences .contenucompetences .left p {
+text-align: justify;
+}
+/* the button ! */
+/* le bouton ! */
+.competences .contenucompetences .left a{
+  
+    color: #fff;
+  
+}
+
+/* .competences .contenucompetences .left a:hover{
+    color: #fcec0c;
+    background: none;
+} */
+
+/* competences right */
+  .right .info{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skillname{
+font-size: 18px;
+font-weight: 700;
+color: #000;
+text-transform: uppercase;
+margin: 20px 0;
+
+}
+
+.skillbar{
+    height: 6px;
+    background: #fcec0c;
+    border-radius: 3px;
+}
+
+.skillper{
+    height: 6px;
+    background: #25E1ED;
+    border-radius: 3px;
+    position: relative;
+    animation: progressbar 7.5s 1;
+
+}
+
+.skillper::before{
+    content: attr(per);
+    /* La fonction attr() est utilisée afin de récupérer la valeur
+     d'un attribut d'un élément pour l'utiliser dans la feuille de style. */
+    position: absolute;
+    padding: 4px 6px;
+    font-size: 12px;
+    top: -25px;
+    right: 0;
+    font-weight: 700;
+    transform: translateX(50%);
+}
+
+@keyframes progressbar{
+    from{
+        width: 0;
+    }
+    to{
+        width:100%;
+    }
+}
+
+
+
+            
+        /* project section */
+         /* section projet */
+            /* section titre neon */
+         .neon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 20vh;
+          background: #000;
+         }
+
+         .boxs{
+             
+            position: relative;
+            height: 57px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            top: 83px;
+        }
+        
+        .line{
+            position: relative;
+            top: 50%;
+            width: 9em;
+            margin: 0 auto;
+            border-right: 2px solid #00b3ff;
+            font-size: 180%;
+            text-align: center;
+            white-space: nowrap;
+            /* overflow: hidden; */
+            transform: translateY(-50%);
+        }
+        
+        .boxs p{
+        
+            text-align: center;
+            justify-content: center;
+            font-family: 'orbitron';
+            color: #fff;
+            font-size: 3em;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-shadow: 5px 5px 20px #00b3ff;
+            /* , 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff; */
+        }
+        
+ 
+       
+        /* animation du texte  */
+
+        .typewrite{
+            animation: typo 4s steps(40)  infinite ,
+            blinktextcursor 500ms steps(40) infinite normal;
+        }
+
+        @keyframes  typo {
+            from{ width: 0;
+
+            }
+            to{
+                width: 9em;
+            }
+        }
+        
+        @keyframes  blinktextcursor{
+
+            from{ 
+                border-right-color: rgba(275, 275, 275, 0.75);
+
+            }
+            to{
+               border-right-color: transparent;
+            }
+        }
+          
+        /* footer section */
+        /* Partie footer */
+
+        .footer{
+            background: url(media/cybercar.gif) 50% 75%;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 300px;
+        }
+
+        .footer .maxwidth{
+            top: -48px;
+            position: relative;
+        }
+
+        .footer .social{
+            text-align: center;
+            padding-bottom: 25px;
+            color: black;
+        }
+
+        .footer .social a{
+            color: #25E1ED;
+            font-size: 60px;
+       
+            display: inline-block;
+            text-align: center;
+            margin: 0 8px;
+            transition: 0.5s ease-in-out;
+            
+        }
+
+        .footer .social a:hover{
+            opacity: 0.9;
+            color: #FF4A57;
+        }
+        
+        .footer ul{
+            font-family: 'ubuntu';
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.6;
+            margin-bottom: 0;
+            text-align: center;
+            color: #fff;
+
+        }
+
+        .footer ul li{
+            display: inline-block;
+            padding: 0 15px;
+            
+
+        }
+
+        .footer ul li a{
+            color: #fcec0c;
+            transition: 0.3s ease-in-out;
+        }
+
+        .footer ul li a:hover{
+            color: #25E1ED;
+        }
+
+        .footer .copyright{
+            font-family: 'ubuntu';
+            margin-top: 25px;
+            text-align: center;
+            font-size: 13px;
+            color: #fcec0c;
+            font-weight: 800;
+        }
+/* scroll up btn */
+/* bouton pour scroll au dessus */
+.scrollupbtn{
+    position: fixed;
+    height: 45px;
+    width: 45px;
+    background-color: #25E1ED;
+    color: #fcec0c;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+    text-align: center;
+    line-height: 45px;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scrollupbtn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* card with tilt js */
+/* carte avec tilt js */
+.cardos{
+   
+    border-radius: 18px;
+    background: #fcec0c;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family:'ubuntu';
+    text-align: center;
+    transition: 0.5s ease;
+    margin: 20px;
+    width: 300px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+
+}
+
+.cardosimage{
+    grid-area:image;
+    background: url("media/cybercar.gif") 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover ;
+    height: 150px;
+}
+
+.cardostext{
+    color: black;
+    grid-area:text;
+    transform: translateZ(30px);
+    font-weight: 600;
+    
+}
+
+.datos{
+    color: #25E1ED;
+    font-size: 23px;
+}
+
+.cardostext i{
+    color: #25E1ED;
+    font-size: 33px;
+}
+
+.cardostext p i{
+    color:#FF4A57;
+    font-size: 28px;
+}
+
+#imagus{
+    background: url(media/Logo\ empire.png) 35px 10px no-repeat;
+    background-size: 70%;
+    transform: translateZ(30px);
+}
+#imagus1{
+    background: url(media/cg2i.png) 35px  no-repeat;
+    background-size: 80%;
+    transform: translateZ(20px);
+}
+
+/* responsive media queries */
+@media (max-width: 1300px){
+    .accueil .maxwidth{
+        margin-left: 0px;
+
+    }
+}
+
+
+
+@media (max-width: 947px){
+    .maxwidth{
+       
+        padding: 0 50px;
+        
+    }
+}
+
+@media (max-width: 947px){
+
+/* for the nav bar*/
+   
+
+    .navbar .menu{
+    position: fixed;
+    background:#25E1ED;
+    height: 100vh;
+    width: 100%;   
+    left: -100%; 
+    top: 0;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.5s ease-in-out;
+    }
+
+    .navbar .menu li{
+    display: block;
+    }
+    .menuBtn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+    }
+
+    .menuBtn i.active::before{
+
+        content: "\f00d";
+        /* \f00d est la valeur css de la croix */
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    
+
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .menuBtn{
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar.sticky .menu li a:hover{
+        color: #fcec0c;
+    }
+
+    /* for the title */
+    /* pour le titre */
+     .accueil .contenuaccueil .text-2{
+            font-size: 70px;
+          
+        
+            }
+        
+     .accueil .contenuaccueil .text-3{
+                font-size: 35px;
+           
+                }
+
+    .accueil .contenuaccueil a{
+
+        font-size: 23px;
+        padding: 10px 30px;
+
+
+    }
+    /* for the section presentation */
+    /* pour la presentation */
+
+    .maxwidth{
+       
+        max-width: 800px;
+          
+      }
+    .presentation .contenupresentation .column {
+        width: 50%;
+        }
+
+     .presentation .contenupresentation .left {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto 60px;
+            }
+
+    .presentation .contenupresentation .right{
+        flex:100%
+            }
+   
+            .experience .contenuexperience .card{
+                width: calc(50% - 10px);
+                margin-bottom: 20px;
+
+            }
+
+            .competences .contenucompetences .column{
+                width: 100%;
+                margin-bottom: 35px;
+            }
+}
+
+
+
+
+@media (max-width: 690px){
+
+    .maxwidth{
+       
+        padding: 0 23px;
+        
+    }
+   
+    .accueil .contenuaccueil .text-2{
+        font-size: 60px;
+      
+    
+        }
+    
+ .accueil .contenuaccueil .text-3{
+            font-size: 32px;
+       
+            }
+
+ .accueil .contenuaccueil a{
+
+           font-size: 20px;
+        
+             }
+
+             .experience .contenuexperience .card {
+                width: 100%
+                
+            }
+            #toggle{
+              
+                top: 0;
+                left: 0;
+         
+            
+            }
+
+            .cardus {
+
+                left: 80px;
+            }
+
+            .cardus h2 {
+                flex-direction: column;
+                font-size: 20px;
+            }
+}
+
+@media (max-width: 500px){
+
+
+    .accueil .contenuaccueil .text-2{
+        font-size: 50px;
+      
+        }
+    
+ .accueil .contenuaccueil .text-3{
+            font-size: 27px;
+       
+            }
+
+            .cybr-btn{
+                width: 280px;
+                letter-spacing: 0;
+                min-width: none;
+            }
+
+            .cardus h2 {
+                flex-direction: column;
+                font-size: 15px;
+            }
+        
+}
+
+@media (max-width: 345px){
+    .competences .titre::after{
+        top: 92px;
+    }
+
+    .cardus h2 {
+        flex-direction: column;
+        font-size: 12px;
+    }
+    
+}
+
+
+@media (min-width:346px) and (max-width:425px) {
+    .competences .titre::after{
+        top: 50px;
+    }
+    
+}
+
