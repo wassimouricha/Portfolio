@@ -571,6 +571,7 @@ section .titre::after{
 
 .presentation .titre::after{
     content: "自分は何者 ?";
+     /* じぶん は なにもの ?  */
     position: absolute;
     bottom: -15px;
     font-size: 20px;
@@ -748,7 +749,7 @@ section .titre::after{
 
 
 .experience .titre::after{
-    content: "Professionnel";
+    content: "プロフェッショナル";
     background: black;
 
 }
@@ -843,7 +844,7 @@ align-items: center;
 }
 
 .competences .titre::after{
-    content: "En programmation";
+    content: "スキル ";
     position: absolute;
     bottom: -15px;
     font-size: 20px;
