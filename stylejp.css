@@ -1152,12 +1152,13 @@ margin: 20px 0;
     grid-area:text;
     transform: translateZ(30px);
     font-weight: 600;
+    font-size: 12px;
     
 }
 
 .datos{
     color: #25E1ED;
-    font-size: 23px;
+    font-size: 15px;
 }
 
 .cardostext i{
