@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
     <!-- link swiper js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- link with fontAwesome -->
     <!-- liens avec Font awesome -->
     <script src="https://kit.fontawesome.com/608f7bac6b.js"></script>
@@ -20,10 +21,10 @@
     <!-- link with baffle.js -->
     <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 
-   <!-- liens avec AOS.js -->
-   <!-- link with AOS.JS -->
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- liens avec AOS.js -->
+    <!-- link with AOS.JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- liens avec Fontawesome -->
     <!-- link with fontawesome -->
@@ -37,304 +38,328 @@
     <div class="scrollupbtn">
         <i class="fas fa-angle-double-up"></i>
     </div>
-            <!--  nav est une section destinée à la navigation dans un document,ayant des liens vers d'autres pages ou des fragments de cette page. -->
-        <nav class="navbar">
-            <div class="maxwidth">
-                <div class="logo"> <a href="#accueil">Portfo<span>lio.</span></a></div>
-                <ul class="menu">
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#presentation">Présentation</a></li>
-                    <li><a href="#experience">Expérience</a></li>
-                    <li><a href="#competences">Compétences</a></li>
-                    <li><a href="#projet">Projets</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                    <li> <a><div id="toggle">
-                        <i class="indicateur"></i>
-                    </div></a>
+    <!--  nav est une section destinée à la navigation dans un document,ayant des liens vers d'autres pages ou des fragments de cette page. -->
+    <nav class="navbar">
+        <div class="maxwidth">
+            <div class="logo"> <a href="#accueil">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projet">Projets</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li> <a>
+                        <div id="toggle">
+                            <i class="indicateur"></i>
+                        </div>
+                    </a>
                 </li>
-                <li> <div class="languewrap">
-                    <a href="index.html" langage='français' >FR</a>
-                    <a href="indexen.html" langage='anglais'>EN</a>
-                    <a href="indexjap.html" langage='japonais'>日本</a>
-                </div>
-            </li>
-                   
-                </ul>
-                <div class="menuBtn">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <li>
+                    <div class="languewrap">
+                        <a href="index.html" langage='français'>FR</a>
+                        <a href="indexen.html" langage='anglais'>EN</a>
+                        <a href="indexjap.html" langage='japonais'>日本</a>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="menuBtn">
+                <i class="fas fa-bars"></i>
             </div>
+        </div>
 
-        </nav>
+    </nav>
 
-            <!-- Debut de la section accueil -->
-            <section class="accueil" id="accueil">
-             <div class="maxwidth">
-                 <div class="contenuaccueil contenufrancais">  
-                     <div class="text-1">Bonjour, je m'appelle </div>
-                     <div class="text-2 heading">Wassim Bouricha </div>
-                     <div class="text-3">et je suis en <span class="pouring">formation Développeur web</span></div>
+    <!-- Debut de la section accueil -->
+    <section class="accueil" id="accueil">
+        <div class="maxwidth">
+            <div class="contenuaccueil contenufrancais">
+                <div class="text-1">Bonjour, je m'appelle </div>
+                <div class="text-2 heading">Wassim Bouricha </div>
+                <div class="text-3">et je suis en <span class="pouring">formation Développeur web</span></div>
 
-                     <button class="cybr-btn"> <a href="#presentation">
+                <button class="cybr-btn"> <a href="#presentation">
                         En_savoir_plus<span aria-hidden>_</span>
                         <!-- aria hidden permet de masquer un élément (ou un groupe d’éléments) 
                             pour les lecteurs d’écran. -->
                         <span aria-hidden class="cybr-btn__glitch">En_savoir_plus_</span>
-                        <span aria-hidden class="cybr-btn__tag">V1.1</span></a>
-                      </button>
-                     <!-- <a href="#presentation">En savoir plus</a> -->
-                </div>
-            
-             </div>
+                        <span aria-hidden class="cybr-btn__tag">V1.1</span>
+                    </a>
+                </button>
+                <!-- <a href="#presentation">En savoir plus</a> -->
+            </div>
 
-        
-            </section>
-            <!-- Debut de la section présentation -->
-            <section class="presentation" id="presentation">
-                <div class="maxwidth">
-                    <h2 class="titre">Présentation</h2>
-                    <div class="contenupresentation">  
-                        <div class="column left" >
-                            <div class="cardus">
-                                <div class="imgBox">  <img src="./media/wassim1.gif" alt="moi" data-aos="fade-right" > </div>
-                                    <div class="detailus">
-                                        <div class="contentus">
-                                           
-                                           <h2> Wassim_Bouricha <br><span>Étudiant_Développeur_Web</span></h2>
-                                           <div class="socialus">
-                                               <a href="https://github.com/wassimouricha"><i class="fab fa-github-square"></i></a>
-                                               <a href="https://www.linkedin.com/in/wassim-bouricha/"><i class="fab fa-linkedin-in"></i></a>
-                                           </div>
-                                        </div>
-                                    </div>
-                               
-                            </div>
-                            
-                        </div>
-                        <div class="column right" data-aos="fade-left">
-                            <div class="text"> 
-                                Actuellement en reconversion professionnelle dans la formation TP développeur web et web mobile au sein du GRETA grand hainaut <br> <br>
-                                <span>Je suis à la recherche d'un stage en tant que développeur Web du 07/02/2022 au 05/03/2022 et du 11/04/2022 au 07/05/2022</span>
-                                <br> <br>
-                                <p> Diplômé d’une licence Pro Chef de Chantier à l’ISTV, et ayant auparavant obtenu un BTS Bâtiment.</p> 
-                                <br>
-                                <p> J'ai eu la chance de travailler au sein de la société <span>CG2I </span>  pour un client prestigieux qui est  <span>AMAZON FRANCE.</span> </p> <br>
-                                <p> Fort d’une expérience de 2 ans dans le secteur du bâtiment, j’ai eu l’occasion de développer diverses compétences tels que le management,
-                                    la communication, la résolutions de problèmes et l’organisation. </p> <br>
-                                    <button class="cybr-btn" data-aos="fade-up"> <a href="media/cvwassim.pdf" target="blank" download="Cv_wassim.pdf">
-                                        Télécharger_le_cv<span aria-hidden>_</span>
-                                        <!-- aria hidden permet de masquer un élément (ou un groupe d’éléments) 
-                                            pour les lecteurs d’écran. -->
-                                        <span aria-hidden class="cybr-btn__glitch">Télécharger_le_cv</span>
-                                        <span aria-hidden class="cybr-btn__tag">V1.1</span></a>
-                                      </button>
-                      
+        </div>
+
+
+    </section>
+    <!-- Debut de la section présentation -->
+    <section class="presentation" id="presentation">
+        <div class="maxwidth">
+            <h2 class="titre">Présentation</h2>
+            <div class="contenupresentation">
+                <div class="column left">
+                    <div class="cardus">
+                        <div class="imgBox"> <img src="./media/wassim1.gif" alt="moi" data-aos="fade-right"> </div>
+                        <div class="detailus">
+                            <div class="contentus">
+
+                                <h2> Wassim_Bouricha <br><span>Étudiant_Développeur_Web</span></h2>
+                                <div class="socialus">
+                                    <a href="https://github.com/wassimouricha"><i class="fab fa-github-square"></i></a>
+                                    <a href="https://www.linkedin.com/in/wassim-bouricha/"><i
+                                            class="fab fa-linkedin-in"></i></a>
                                 </div>
+                            </div>
                         </div>
-                   </div>
-                </div>
-               </section>
-               
-               <!-- section mes projets -->
-                 <!-- Swiper -->
-                 <section class="carou" id="projet">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                    <div class="swiper-slide"> <a href="https://wassimouricha.github.io/empiretelecom.github.io/"> <img src="./media/empire.png" alt="site empire telecom"> </a> </div>
-                    <div class="swiper-slide"> <a href="https://wassimouricha.github.io/yaziboss.github.io/"><img src="./media/tat4.jpg" alt="site yazi"></a></div>
-                    <div class="swiper-slide"><a href="https://wassimouricha.github.io/Diisnox.github.io/"><img src="./media/diisnox.png" alt="site diisnox"></a></div>
-                    <div class="swiper-slide"><a href="https://wassimouricha.github.io/Pianowassim.github.io/"><img src="./media/piano.png" alt="piano"></a></div>
-                    <div class="swiper-slide"><a href="https://wassimouricha.github.io/neon.github.io/"><img src="./media/neon.png" alt="neon"></a></div>
-            
+
                     </div>
-                         <div class="boxs">
-                    
-                        <p class="line typewrite">Mes_projets</p>
-                      </div>
-                    <!-- <div class="swiper-pagination"></div> -->
-                </div>
-            </section>
-                <!-- Debut de la section expérience -->
-            <section class="experience" id="experience">
-                <div class="maxwidth">
-                    <h2 class="titre">Expérience</h2>
-                    <div class="contenuexperience">  
-                   
-                        <div class="cardos rgb" data-tilt data-aos="fade-right">
-                            <div class="cardosimage" id="imagus" ></div>
-                            <div class="cardostext">
-                                <br><br>
-                                <i class="fas fa-laptop-code"></i> <br> <br> 
-                                <span class="datos"> Empire Télécom - Stage Développeur web</span> <br> <br>
-                                <p>-Création d'un site vitrine  en langage : <br> <br> <i class="fab fa-html5"></i>   - HTML
-                                     <br><i class="fab fa-css3-alt"></i>  - CSS  <br> <i class="fab fa-js-square"></i>  - javascript </p>
-                            </div>
-                            
-                            
-                        
-                        </div>
-                        <div class="cardos rgb" data-tilt data-aos="fade-left">
-                            <div class="cardosimage" id="imagus1" ></div>
-                            <div class="cardostext">
-                                <br><br>
-                                <i class="fas fa-hard-hat"></i> <br> 
-                                <span class="datos"> CG2I  |<br>  Assistant conducteur de travaux  | Chantier Amazon LIL1</span> <br> <br>
-                                <p>- Gestion d’une vingtaine de sous-traitants et d’environ 300 ouvriers sur place. <br> <br>
-                                    - Optimisation et coordination des différents sous-traitants au sein d’un même poste de travail. </p>
-                            </div>
-                            
-                            
-                        
-                        </div>
-  
 
-                   </div>
                 </div>
-               </section>
-               
-               <!-- section des compétences -->
-
-               <section class="competences" id="competences">
-                <div class="maxwidth">
-                    <h2 class="titre">Mes compétences</h2>
-                    <div class="contenucompetences">
-                        <div class="column left" data-aos="fade-right">
-                            <div class="text">langage de programmation</div>
-                            <p> Depuis le début de ma formation ainsi que pendant mon stage j'ai pu monter en compétences dans différents langages de programmations</p>
-                            <button class="cybr-btn"> <a href="#presentation">
-                                En_savoir_plus<span aria-hidden>_</span>
+                <div class="column right" data-aos="fade-left">
+                    <div class="text">
+                        Actuellement en reconversion professionnelle dans la formation TP développeur web et web mobile
+                        au sein du GRETA grand hainaut <br> <br>
+                        <span>Je suis à la recherche d'un stage en tant que développeur Web du 07/02/2022 au 05/03/2022
+                            et du 11/04/2022 au 07/05/2022</span>
+                        <br> <br>
+                        <p> Diplômé d’une licence Pro Chef de Chantier à l’ISTV, et ayant auparavant obtenu un BTS
+                            Bâtiment.</p>
+                        <br>
+                        <p> J'ai eu la chance de travailler au sein de la société <span>CG2I </span> pour un client
+                            prestigieux qui est <span>AMAZON FRANCE.</span> </p> <br>
+                        <p> Fort d’une expérience de 2 ans dans le secteur du bâtiment, j’ai eu l’occasion de développer
+                            diverses compétences tels que le management,
+                            la communication, la résolutions de problèmes et l’organisation. </p> <br>
+                        <button class="cybr-btn" data-aos="fade-up"> <a href="media/cvwassim.pdf" target="blank"
+                                download="Cv_wassim.pdf">
+                                Télécharger_le_cv<span aria-hidden>_</span>
                                 <!-- aria hidden permet de masquer un élément (ou un groupe d’éléments) 
-                                    pour les lecteurs d’écran. -->
-                                <span aria-hidden class="cybr-btn__glitch">En_savoir_plus</span>
-                                <span aria-hidden class="cybr-btn__tag">V1.1</span></a>
-                              </button>
-                            <!-- <a href="#">En savoir plus</a> -->
-                        </div>
-                        <div class="column right" data-aos="fade-left">
-                           
-                                <div class="info">
-                                   <div class="skillname">HTML <i class="fab fa-html5"></i></div>
-                                <div class="skillbar">
-                                <div class="skillper" per="Bases solides" style="max-width: 50%" data-progress="50"></div>
-                            </div>
-                            </div>
-                       
+                                            pour les lecteurs d’écran. -->
+                                <span aria-hidden class="cybr-btn__glitch">Télécharger_le_cv</span>
+                                <span aria-hidden class="cybr-btn__tag">V1.1</span>
+                            </a>
+                        </button>
 
-                        
-                            <div class="info">
-                               <div class="skillname">CSS <i class="fab fa-css3-alt"></i></div>
-                            <div class="skillbar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section mes projets -->
+    <!-- Swiper -->
+    <section class="carou" id="projet">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> <a href="https://wassimouricha.github.io/empiretelecom.github.io/"> <img
+                            src="./media/empire.png" alt="site empire telecom"> </a> </div>
+                <div class="swiper-slide"> <a href="https://wassimouricha.github.io/yaziboss.github.io/"><img
+                            src="./media/tat4.jpg" alt="site yazi"></a></div>
+                <div class="swiper-slide"><a href="https://wassimouricha.github.io/Diisnox.github.io/"><img
+                            src="./media/diisnox.png" alt="site diisnox"></a></div>
+                <div class="swiper-slide"><a href="https://wassimouricha.github.io/Pianowassim.github.io/"><img
+                            src="./media/piano.png" alt="piano"></a></div>
+                <div class="swiper-slide"><a href="https://wassimouricha.github.io/neon.github.io/"><img
+                            src="./media/neon.png" alt="neon"></a></div>
+                <div class="swiper-slide"><a href="https://wassimouricha.github.io/Pokedex_v2/"><img
+                            src="./media/pokemon.png" alt="pokedex"></a></div>
+            </div>
+            <div class="boxs">
+
+                <p class="line typewrite">Mes_projets</p>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
+    <!-- Debut de la section expérience -->
+    <section class="experience" id="experience">
+        <div class="maxwidth">
+            <h2 class="titre">Expérience</h2>
+            <div class="contenuexperience">
+
+                <div class="cardos rgb" data-tilt data-aos="fade-right">
+                    <div class="cardosimage" id="imagus"></div>
+                    <div class="cardostext">
+                        <br><br>
+                        <i class="fas fa-laptop-code"></i> <br> <br>
+                        <span class="datos"> Empire Télécom - Stage Développeur web</span> <br> <br>
+                        <p>-Création d'un site vitrine en langage : <br> <br> <i class="fab fa-html5"></i> - HTML
+                            <br><i class="fab fa-css3-alt"></i> - CSS <br> <i class="fab fa-js-square"></i> - javascript
+                        </p>
+                    </div>
+
+
+
+                </div>
+                <div class="cardos rgb" data-tilt data-aos="fade-left">
+                    <div class="cardosimage" id="imagus1"></div>
+                    <div class="cardostext">
+                        <br><br>
+                        <i class="fas fa-hard-hat"></i> <br>
+                        <span class="datos"> CG2I |<br> Assistant conducteur de travaux | Chantier Amazon LIL1</span>
+                        <br> <br>
+                        <p>- Gestion d’une vingtaine de sous-traitants et d’environ 300 ouvriers sur place. <br> <br>
+                            - Optimisation et coordination des différents sous-traitants au sein d’un même poste de
+                            travail. </p>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section des compétences -->
+
+    <section class="competences" id="competences">
+        <div class="maxwidth">
+            <h2 class="titre">Mes compétences</h2>
+            <div class="contenucompetences">
+                <div class="column left" data-aos="fade-right">
+                    <div class="text">langage de programmation</div>
+                    <p> Depuis le début de ma formation ainsi que pendant mon stage j'ai pu monter en compétences dans
+                        différents langages de programmations</p>
+                    <button class="cybr-btn"> <a href="#presentation">
+                            En_savoir_plus<span aria-hidden>_</span>
+                            <!-- aria hidden permet de masquer un élément (ou un groupe d’éléments) 
+                                    pour les lecteurs d’écran. -->
+                            <span aria-hidden class="cybr-btn__glitch">En_savoir_plus</span>
+                            <span aria-hidden class="cybr-btn__tag">V1.1</span>
+                        </a>
+                    </button>
+                    <!-- <a href="#">En savoir plus</a> -->
+                </div>
+                <div class="column right" data-aos="fade-left">
+
+                    <div class="info">
+                        <div class="skillname">HTML <i class="fab fa-html5"></i></div>
+                        <div class="skillbar">
                             <div class="skillper" per="Bases solides" style="max-width: 50%" data-progress="50"></div>
                         </div>
+                    </div>
+
+
+
+                    <div class="info">
+                        <div class="skillname">CSS <i class="fab fa-css3-alt"></i></div>
+                        <div class="skillbar">
+                            <div class="skillper" per="Bases solides" style="max-width: 50%" data-progress="50"></div>
                         </div>
-                  
-  
-                          
-                                <div class="info">
-                                   <div class="skillname">Javascript <i class="fab fa-js-square"></i></div>
-                                <div class="skillbar">
-                                <div class="skillper" per="basiques" style="max-width: 20%" data-progress="20"></div>
-                            </div>
-                          
-                            </div>
-                      
-                      
-                            <div class="info">
-                               <div class="skillname" id="rightus">jquery <i class="fas fa-code"></i></div>
-                            <div class="skillbar">
+                    </div>
+
+
+
+                    <div class="info">
+                        <div class="skillname">Javascript <i class="fab fa-js-square"></i></div>
+                        <div class="skillbar">
+                            <div class="skillper" per="basiques" style="max-width: 20%" data-progress="20"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info">
+                        <div class="skillname" id="rightus">jquery <i class="fas fa-code"></i></div>
+                        <div class="skillbar">
                             <div class="skillper" per="basiques" style="max-width: 20%" data-progress="10"></div>
-                      
+
                         </div>
                     </div>
 
                     <div class="info">
                         <div class="skillname" id="rightus">Wordpress <i class="fab fa-wordpress"></i></div>
-                     <div class="skillbar">
-                        <div class="skillper" per="Bases acquises" style="max-width: 30%" data-progress="30"></div>
-               
-                 </div>
-             </div>
-            
-                   
-                     
-                    
+                        <div class="skillbar">
+                            <div class="skillper" per="Bases acquises" style="max-width: 30%" data-progress="30"></div>
+
+                        </div>
                     </div>
+
+
+
+
                 </div>
-               </section>
-                <!-- footer section -->
-                <!-- partie footer -->
-               <section class="footer" id="footer">
-                <div class="maxwidth">
-                    <div class="social">
-                        <a href="https://github.com/wassimouricha"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/wassim-bouricha/"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <ul class="liste">
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#presentation">Présentation</a></li>
-                        <li><a href="#experience">Expérience</a></li>
-                        <li><a href="#competences">Compétences</a></li>
-                        <li><a href="#projet">Projets</a></li>
-                        <li><a href="#footer">Contact</a></li>
-                    </ul>
-                    <p class="copyright">Wassim Bouricha © 2021</p>
-               </section>
+            </div>
+    </section>
+    <!-- footer section -->
+    <!-- partie footer -->
+    <section class="footer" id="footer">
+        <div class="maxwidth">
+            <div class="social">
+                <a href="https://github.com/wassimouricha"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/wassim-bouricha/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <ul class="liste">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projet">Projets</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <p class="copyright">Wassim Bouricha © 2021</p>
+    </section>
 
 
-                            <!-- Swiper JS -->
-                    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-                    <!-- initialisation du swiper sans passer par un fichier js -->
-                    <script>
-                        var swiper = new Swiper(".mySwiper", {
-                        effect: "coverflow",
-                        grabCursor: true,
-                        centeredSlides: true,
-                        slidesPerView: "auto",
-                        coverflowEffect: {
-                            rotate: 30,
-                            stretch: 0,
-                            depth: 500,
-                            
-                            modifier: 1,
-                            slideShadows: true,
-                        },
-                            loop:true,
-                            autoplay: {
-                            delay: 1500,
-                            disableOnInteraction:false,
-                            },
+    <!-- initialisation du swiper sans passer par un fichier js -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 30,
+                stretch: 0,
+                depth: 500,
 
-                        });
-                    </script>
-                        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>      
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
 
-                                
-    
+        });
+    </script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 
-                    <!-- script pour baffle js -->
-                   <script type="text/javascript">
-                    const text = baffle(".heading");
-                    text.set({
-                        characters : '░▒░ *▓$▓▓*▓> ▒/░>░ ><░ ▒▒▓░▓ >▓▒█ ▒>▓ ▒█▓< ██▓<',
-                        speed: 180 
-                    });
-                    text.start();
-                    text.reveal(3000);
-            
-                </script>
-                   <!-- vanilla tilt -->
-                <script src="vanilla-tilt.min.js"></script>
 
-                 <!-- initialisation de AOS js -->
-                <script>
-                    AOS.init();
-                </script>
 
-              
-                <!-- Mon script -->
-                 <script src="script.js"></script>
-        
+
+    <!-- script pour baffle js -->
+    <script type="text/javascript">
+        const text = baffle(".heading");
+        text.set({
+            characters: '░▒░ *▓$▓▓*▓> ▒/░>░ ><░ ▒▒▓░▓ >▓▒█ ▒>▓ ▒█▓< ██▓<',
+            speed: 180
+        });
+        text.start();
+        text.reveal(3000);
+
+    </script>
+    <!-- vanilla tilt -->
+    <script src="vanilla-tilt.min.js"></script>
+
+    <!-- initialisation de AOS js -->
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- Mon script -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
