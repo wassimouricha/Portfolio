@@ -33,7 +33,7 @@
     <title>Portfolio Wassim Bouricha</title>
 </head>
 
-<body>
+<body onload="initClock()">
     <div class="scrollupbtn">
         <i class="fas fa-angle-double-up"></i>
     </div>
@@ -72,6 +72,22 @@
         
              <div class="maxwidth">
                 <div class="contenuaccueil contenuanglais">  
+                     <!-- Horloge digital -->
+                <div class="dateTime">
+                    <div class="dates">
+                        <span id="dayname">Day</span>,
+                        <span id="month">Month</span>
+                        <span id="daynum">00</span>,
+                        <span id="year">Year</span>
+                    </div>
+                    <div class="time">
+                        <span id="hour">00</span>:
+                        <span id="minutes">00</span>:
+                        <span id="seconds">00</span>
+                        <span id="period">AM</span>
+                    </div>
+                </div>
+                
                     <div class="text-1">Hello, my name is </div>
                     <div class="text-2 heading">Wassim Bouricha </div>
                     <div class="text-3">and i am a <span class="pouring">web developer</span></div>
@@ -332,7 +348,7 @@
 
               
                 <!-- Mon script -->
-                 <script src="script.js"></script>
+                 <script src="scripten.js"></script>
         
 </body>
 </html>

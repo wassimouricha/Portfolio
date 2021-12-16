@@ -33,7 +33,7 @@
     <title>Portfolio Wassim Bouricha jp</title>
 </head>
 
-<body>
+<body onload="initClock()">
     <div class="scrollupbtn">
         <i class="fas fa-angle-double-up"></i>
     </div>
@@ -71,6 +71,24 @@
             <section class="accueil" id="accueil">
              <div class="maxwidth">
                  <div class="contenuaccueil contenufrancais">  
+                             <!-- Horloge digital -->
+                <div class="dateTime">
+                    <div class="dates">
+                        <span id="year">Year</span>年(ねん)
+                        <span id="month">Month</span>(がつ)
+                        <span id="dayname">Day</span>
+                        <span id="daynum">00</span>日(にち)
+                        
+                        
+                    </div>
+                    <div class="time">
+                        <span id="hour">00</span>:
+                        <span id="minutes">00</span>:
+                        <span id="seconds">00</span>
+                        <span id="period">AM</span>
+                    </div>
+                </div>
+                
                      <div class="text-1">こんにちは、私の名前は (わたくし の なまえ は) </div>
                      <div class="text-2 heading">ボウリチァワスィム </div>
                      <div class="text-3">そして <span class="pouring">ウェブ デベロッパ  トレーニング</span> になっています</div>
@@ -335,7 +353,7 @@
 
               
                 <!-- Mon script -->
-                 <script src="script.js"></script>
+                 <script src="scriptjp.js"></script>
         
 </body>
 </html>
