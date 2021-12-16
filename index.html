@@ -34,7 +34,7 @@
     <title>Portfolio Wassim Bouricha</title>
 </head>
 
-<body>
+<body onload="initClock()">
     <div class="scrollupbtn">
         <i class="fas fa-angle-double-up"></i>
     </div>
@@ -75,6 +75,22 @@
     <section class="accueil" id="accueil">
         <div class="maxwidth">
             <div class="contenuaccueil contenufrancais">
+                <!-- Horloge digital -->
+                <div class="dateTime">
+                    <div class="dates">
+                        <span id="dayname">Jour</span>,
+                        <span id="daynum">00</span>,
+                        <span id="month">mois</span>
+                        <span id="year">Année</span>
+                    </div>
+                    <div class="time">
+                        <span id="hour">00</span>:
+                        <span id="minutes">00</span>:
+                        <span id="seconds">00</span>
+                        <span id="period">AM</span>
+                    </div>
+                </div>
+                
                 <div class="text-1">Bonjour, je m'appelle </div>
                 <div class="text-2 heading">Wassim Bouricha </div>
                 <div class="text-3">et je suis en <span class="pouring">formation Développeur web</span></div>
@@ -330,6 +346,8 @@
             },
 
         });
+
+        
     </script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
