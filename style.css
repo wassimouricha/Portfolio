@@ -1179,6 +1179,11 @@ margin: 20px 0;
     background-size: 80%;
     transform: translateZ(20px);
 }
+#imagus2{
+    background: url(media/qrcode.png) 35px  no-repeat;
+    background-size: 80%;
+    transform: translateZ(20px);
+}
 
 /* horloge digital */
 .dateTime{
